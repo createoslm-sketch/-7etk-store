@@ -44,7 +44,6 @@ export function Catalog() {
 
   const visibleProducts = useMemo(() => {
     if (!selectedCategory) return [];
-
     return products.filter((product) => selectedCategory.matcher(product.category, product.title));
   }, [selectedCategory]);
 
