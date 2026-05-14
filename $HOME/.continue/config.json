@@ -1,0 +1,16 @@
+{
+  "models": [
+    {
+      "title": "LM Studio",
+      "model": "qwen2.5-coder-3b-instruct",
+      "apiBase": "http://127.0.0.1:1234/v1",
+      "provider": "openai"
+    }
+  ],
+  "slashCommands": [
+    {
+      "name": "edit",
+      "description": "Editer"
+    }
+  ]
+}
