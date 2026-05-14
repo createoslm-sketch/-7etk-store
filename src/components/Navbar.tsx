@@ -23,9 +23,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border"
-          : "bg-transparent"
+        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
@@ -35,11 +33,13 @@ export function Navbar() {
           </span>
           <span className="text-foreground">!7etk</span>
         </a>
+
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <button onClick={() => scrollTo("hero")} className="hover:text-foreground transition">Accueil</button>
           <button onClick={() => scrollTo("shop-section")} className="hover:text-foreground transition">Catalogue</button>
           <button onClick={() => scrollTo("shop-section")} className="hover:text-foreground transition">Formations</button>
         </div>
+
         <div className="flex items-center gap-2">
           <button
             onClick={() => scrollTo("shop-section")}
@@ -64,3 +64,4 @@ export function Navbar() {
     </header>
   );
 }
+
