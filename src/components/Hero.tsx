@@ -55,7 +55,6 @@ export function Hero() {
             </a>
           </div>
         </div>
-
       </div>
     </section>
   );
