@@ -1,37 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { Catalog } from "@/components/Catalog";
-import { DiscordBanner } from "@/components/DiscordBanner";
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="!7etk Store - Ebooks et formations premium" />
+    <title>!7etk Store</title>
+  </head>
 
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Nova — E-books & Formations Premium" },
-      {
-        name: "description",
-        content:
-          "Découvrez une bibliothèque exclusive d'e-books et de formations modernes pour développer vos compétences grâce a !7etk.",
-      },
-      { property: "og:title", content: "Nova — E-books & Formations Premium" },
-      {
-        content: "Apprenez. Créez.et devenez riche",
-      },
-    ],
-  }),
-});
-
-function Index() {
-  return (
-    <main className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <Hero />
-      <Catalog />
-      <DiscordBanner />
-      <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        © 2026 Nova. Tous droits réservés.
-      </footer>
-    </main>
-  );
- }
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/routes/index.tsx"></script>
+  </body>
+</html>
